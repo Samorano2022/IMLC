@@ -23,7 +23,8 @@ import { UiService } from '../core/ui.service';
         @for (link of links; track link.href) {
           <a [href]="link.href" (click)="menuOpen.set(false)">{{ link.label }}</a>
         }
-        <a tartget="_blank"
+        <a
+          target="_blank"
           href="https://conference.menofissacharvision.com/events/imlc#register"
           class="button button-orange"
         >

@@ -12,11 +12,16 @@ import { UiService } from '../core/ui.service';
         <p class="eyebrow light">BE PART OF THE GATHERING</p>
         <h2>Your place starts here.</h2>
         <p>
-          Leave your details and we'll share registration information when it becomes available.
+          Register your interest in IMLC by providing your details and completing the registration
+          form to secure your place at the conference.
         </p>
-        <button class="button button-orange" type="button" (click)="ui.open('register')">
+        <a
+          target="_blank"
+          href="https://conference.menofissacharvision.com/events/imlc#register"
+          class="button button-orange"
+        >
           Register now
-        </button>
+        </a>
       </div>
     </section>
   `,

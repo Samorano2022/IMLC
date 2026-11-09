@@ -13,7 +13,7 @@ import { UiService } from '../core/ui.service';
         <p class="hero-sub">37TH INTERNATIONAL MINISTERS/LEADERSHIP CONFERENCE</p>
         <p class="hero-copy">19th — 24th Jan, 2027 | Time: 9.00am &amp; 5.00pm Daily</p>
         <a
-          tartget="_blank"
+          target="_blank"
           href="https://conference.menofissacharvision.com/events/imlc#register"
           class="button button-orange"
         >

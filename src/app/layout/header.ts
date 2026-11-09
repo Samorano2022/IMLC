@@ -23,7 +23,12 @@ import { UiService } from '../core/ui.service';
         @for (link of links; track link.href) {
           <a [href]="link.href" (click)="menuOpen.set(false)">{{ link.label }}</a>
         }
-        <button class="nav-cta" type="button" (click)="register()">Register now</button>
+        <a tartget="_blank"
+          href="https://conference.menofissacharvision.com/events/imlc#register"
+          class="button button-orange"
+        >
+          Register now
+        </a>
       </nav>
     </header>
   `,

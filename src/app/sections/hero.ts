@@ -11,10 +11,14 @@ import { UiService } from '../core/ui.service';
       <div class="hero-text">
         <img class="hero-theme" src="assets/theme.png" alt="Revivals" />
         <p class="hero-sub">37TH INTERNATIONAL MINISTERS/LEADERSHIP CONFERENCE</p>
-        <p class="hero-copy">Jan 21st - 25th, 2027 | Time: 9.00am &amp; 5.00pm Daily</p>
-        <button class="button button-orange" type="button" (click)="ui.open('register')">
+        <p class="hero-copy">19th — 24th Jan, 2027 | Time: 9.00am &amp; 5.00pm Daily</p>
+        <a
+          tartget="_blank"
+          href="https://conference.menofissacharvision.com/events/imlc#register"
+          class="button button-orange"
+        >
           Register now
-        </button>
+        </a>
       </div>
       <div class="hero-portrait">
         <img

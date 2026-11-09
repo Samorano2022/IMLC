@@ -27,7 +27,7 @@ import { UiService } from '../core/ui.service';
           </article>
         }
       </div>
-      <button class="button button-orange" type="button" (click)="ui.open('register')">
+      <button class="button button-orange" type="button">
         Shop now
       </button>
     </section>

@@ -31,17 +31,17 @@ export const GALLERY_ROWS: GalleryImage[][] = [
     { src: 'assets/minsters.jpg', alt: 'People at an event' },
     { src: 'assets/sunday-ogwuche.jpg', alt: 'People at an event' },
     { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
-    { src: UNSPLASH, alt: 'People at an event' },
+    { src: 'assets/ladygideon.jpg', alt: 'People at an event' },
   ],
   [
     { src: 'assets/kingsley.jpg', alt: 'Live worship moment' },
-    { src: 'assets/philip.jpg', alt: 'Conference audience' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
     { src: 'assets/audience.jpg', alt: 'Speaker on stage' },
-    { src: UNSPLASH, alt: 'People at an event' },
-    { src: UNSPLASH, alt: 'People at an event' },
-    { src: UNSPLASH, alt: 'People at an event' },
-    { src: UNSPLASH, alt: 'People at an event' },
-    { src: UNSPLASH, alt: 'People at an event' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
   ],
 ];
 
@@ -153,8 +153,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'Can I attend with my team?',
-    answer:
-      'Absolutely. We encourage you to invite your ministry team and fellow leaders.',
+    answer: 'Absolutely. We encourage you to invite your ministry team and fellow leaders.',
   },
   {
     question: 'How can I get more information?',

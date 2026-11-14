@@ -12,13 +12,17 @@ import { UiService } from '../core/ui.service';
       <div class="programme-copy" appReveal>
         <h2>Why You Should Be <br />Part of IMLC</h2>
         <p>
-          More than a conference, IMLC is an opportunity to grow in spiritual understanding,
-          sharpen your leadership capacity, and connect with people whose influence extends across
-          different spheres of society.
+          More than a conference, IMLC is an opportunity to grow in spiritual understanding, sharpen
+          your leadership capacity, and connect with people whose influence extends across different
+          spheres of society.
         </p>
-        <button class="button button-dark" type="button" (click)="ui.open('register')">
+        <a
+          href="https://conference.menofissacharvision.com/events/imlc#register"
+          class="button button-dark"
+          type="button"
+        >
           Explore the gathering
-        </button>
+        </a>
       </div>
       <div class="programme-list">
         <p class="eyebrow">WHAT TO EXPECT</p>

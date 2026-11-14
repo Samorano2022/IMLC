@@ -1,5 +1,4 @@
-export const CONTACT_EMAIL = 'hello@imlc.org';
-
+export const CONTACT_EMAIL = 'mivmandate2010@gmail.com';
 export interface NavLink {
   label: string;
   href: string;
@@ -157,7 +156,7 @@ export const FAQS: FaqItem[] = [
   },
   {
     question: 'How can I get more information?',
-    answer: `Send a message to ${CONTACT_EMAIL} and our team will get back to you.`,
+    answer: `Send a message to ${CONTACT_EMAIL} or call +234 808 085 4818 and our team will get back to you.`,
   },
 ];
 

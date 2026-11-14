@@ -9,8 +9,8 @@ import { RevealDirective } from '../core/reveal.directive';
   template: `
     <section class="faq section-pad" id="faq">
       <div appReveal>
-        <p class="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
-        <h2>Before you<br />join us.</h2>
+        <p class="eyebrow">Before you join us.</p>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>Everything you need to prepare for the gathering.</p>
       </div>
       <div class="faq-list" appReveal [revealDelay]="120">

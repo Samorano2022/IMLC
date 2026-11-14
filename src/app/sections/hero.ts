@@ -11,7 +11,7 @@ import { UiService } from '../core/ui.service';
       <div class="hero-text">
         <img class="hero-theme" src="assets/theme.png" alt="Revivals" />
         <p class="hero-sub">37TH INTERNATIONAL MINISTERS/LEADERSHIP CONFERENCE</p>
-        <p class="hero-copy">19th — 24th Jan, 2027 | Time: 9.00am &amp; 5.00pm Daily</p>
+        <p class="hero-copy">20th — 24th Jan, 2027 | Time: 9.00am &amp; 5.00pm Daily</p>
         <a
           target="_blank"
           href="https://conference.menofissacharvision.com/events/imlc#register"
@@ -22,7 +22,8 @@ import { UiService } from '../core/ui.service';
       </div>
       <div class="hero-portrait">
         <img
-          src="assets/daddy-mummy.png"
+          loading="lazy"
+          src="assets/daddy-mummy.jpeg"
           alt="Co-Hosts: Rev. Samson & Rev. Mrs. Stella Ajetomobi"
         />
         <div class="portrait-accent"></div>
@@ -31,7 +32,7 @@ import { UiService } from '../core/ui.service';
       <div class="hero-stats" appReveal [revealDelay]="200">
         <div>
           <strong>5</strong>
-          <span>Days of gathering<br />Jan 21st – 25th</span>
+          <span>Days of gathering<br />Jan 20th – 24th</span>
         </div>
         <div>
           <strong>2×</strong>

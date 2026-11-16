@@ -1262,6 +1262,9 @@ h3 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 24px 12px;
   }
+  .intro-content h3 {
+    font-size: 28px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {

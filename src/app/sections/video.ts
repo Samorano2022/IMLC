@@ -42,65 +42,7 @@ import { UiService } from '../core/ui.service';
           Let the message move you again.
         </p>
       </div>
-
-      <!-- <div class="video-grid">
       
-        <div class="video-card" appReveal [revealDelay]="100">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/S4u9EgkEMOs"
-              title="Men of Issachar Conference Highlights"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="video-info">
-            <span class="video-category">CONFERENCE HIGHLIGHTS</span>
-            <h3>Moments from the Gathering</h3>
-          </div>
-        </div>
-
-
-        <div class="video-card" appReveal [revealDelay]="200">
-          <div class="video-frame">
-            <iframe
-              src="hhttps://www.youtube.com/embed/OpKWOzz0Ekg"
-              title="Men of Issachar Conference Session"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="video-info">
-            <span class="video-category">TEACHINGS</span>
-            <h3>Messages That Transform</h3>
-          </div>
-        </div>
-
-
-        <div class="video-card" appReveal [revealDelay]="300">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/5LzTK3p1SHE"
-              title="Men of Issachar Worship Moments"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-          <div class="video-info">
-            <span class="video-category">WORSHIP & FELLOWSHIP</span>
-            <h3>Moments of Worship</h3>
-          </div>
-        </div>
-      </div> -->
       <div class="video-grid">
         <!-- Video 1 -->
         <div class="video-card" appReveal [revealDelay]="100">
@@ -113,7 +55,7 @@ import { UiService } from '../core/ui.service';
           >
             <div class="video-frame">
               <iframe
-                src="https://www.youtube.com/embed/D619X7uv6vw"
+                src="https://www.youtube.com/embed/S4u9EgkEMOs?autoplay=1"
                 title="Men of Issachar Conference Highlights"
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -124,7 +66,13 @@ import { UiService } from '../core/ui.service';
             <div class="video-info">
               <span class="video-category">CONFERENCE HIGHLIGHTS</span>
               <h3>Moments from the Gathering</h3>
-              <span class="watch-video">Watch video ↗</span>
+              <a
+                href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="watch-video"
+                >Watch video ↗</a
+              >
             </div>
           </a>
         </div>

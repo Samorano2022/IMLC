@@ -16,14 +16,25 @@ import { RevealDirective } from '../core/reveal.directive';
     <section class="moments section-pad" id="moments">
       <div class="section-heading" appReveal>
         <div>
-          <h2>Moments That Draw Us Closer to God.</h2>
+          <h2>
+            Moments That Draw Us Closer to God.
+          </h2>
           <p class="muted-light">
             Relive moments of worship, spiritual growth, and life-changing fellowship.
           </p>
         </div>
         <div class="gallery-controls">
-          <button class="gallery-prev" type="button" aria-label="Previous images" (click)="scroll(-1)">←</button>
-          <button class="gallery-next" type="button" aria-label="Next images" (click)="scroll(1)">→</button>
+          <button
+            class="gallery-prev"
+            type="button"
+            aria-label="Previous images"
+            (click)="scroll(-1)"
+          >
+            ←
+          </button>
+          <button class="gallery-next" type="button" aria-label="Next images" (click)="scroll(1)">
+            →
+          </button>
         </div>
       </div>
 

@@ -7,10 +7,12 @@ export interface NavLink {
 export const NAV_LINKS: NavLink[] = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
-  { label: 'Moments', href: '#moments' },
+  // { label: 'Moments', href: '#moments' },
   { label: 'Speakers', href: '#speakers' },
   { label: 'Programme', href: '#programme' },
   { label: 'Shop', href: '#resources' },
+  { label: 'Testimonials', href: '#testimonials' },
+
 ];
 
 export interface GalleryImage {
@@ -24,23 +26,24 @@ const UNSPLASH =
 export const GALLERY_ROWS: GalleryImage[][] = [
   [
     { src: 'assets/daddyy.jpg', alt: 'Live worship moment' },
+    { src: 'assets/osibanjo.jpg', alt: 'People at an event' },
     { src: 'assets/philip.jpg', alt: 'Conference audience' },
     { src: 'assets/guitar-ministration.jpg', alt: 'Speaker on stage' },
     { src: 'assets/prayer.jpg', alt: 'People at an event' },
     { src: 'assets/minsters.jpg', alt: 'People at an event' },
     { src: 'assets/sunday-ogwuche.jpg', alt: 'People at an event' },
-    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+
     { src: 'assets/newOne.jpg', alt: 'People at an event' },
   ],
   [
     { src: 'assets/kingsley.jpg', alt: 'Live worship moment' },
-    { src: 'assets/newTwo.jpg', alt: 'People at an event' },
+    { src: 'assets/olowoyo.jpg', alt: 'People at an event' },
     { src: 'assets/newThree.jpg', alt: 'Speaker on stage' },
-    { src: 'assets/newFour.jpg', alt: 'People at an event' },
+    { src: 'assets/breakout.jpg', alt: 'People at an event' },
     { src: 'assets/newFive.jpg', alt: 'People at an event' },
     { src: 'assets/newSix.jpg', alt: 'People at an event' },
-    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
-    { src: 'assets/auditorium-backview.jpg', alt: 'People at an event' },
+    { src: 'assets/cacpresident.jpg', alt: 'People at an event' },
+    { src: 'assets/choir.jpg', alt: 'People at an event' },
   ],
 ];
 
@@ -58,37 +61,79 @@ export const SPEAKERS: Speaker[] = [
   {
     name: 'Rev. Samson Ajetomobi',
     role: 'President · Men of Issachar Vision Inc.',
-    image: 'assets/Rev. Samson Ajetomobi.png',
+    image: 'assets/ReV. Samson Ajetomobi.jpeg',
     tag: 'Minister & Teacher',
     profile: 'samson',
   },
   {
     name: 'Rev. Mrs. Stella Ajetomobi',
     role: 'Vice President, Men of Issachar Vision Inc.',
-    image: 'assets/stella.png',
+    image: 'assets/ReV. Stella Ajetomobi.jpg',
     tag: 'Minister & Teacher',
   },
   {
     name: 'Rev. Steve Mensah',
     role: 'General Overseer, Charismatic Evangelistic Ministry (CEM)',
-    image: 'assets/steve.png',
+    image: 'assets/Rev. Steve Mensah.png',
     tag: 'Pastor & Author',
   },
   {
     name: 'Dr. David Ogbueli',
     role: 'Senior Pastor, Dominion City Worldwide',
-    image: 'assets/ogbueli.png',
+    image: 'assets/David Ogbueli.jpg',
     tag: 'Guest Minister',
   },
   {
     name: 'Pastor Poju Oyemade',
     role: 'Founder and Senior Pastor, The Covenant Nation',
-    image: 'assets/poju.png',
+    image: 'assets/Pst. Poju Oyemade.png',
     tag: 'Pastor & Mentor',
   },
-  { name: 'Guess', role: 'Guess', image: 'assets/placeholder.avif', tag: 'Minister & Coach' },
-  { name: 'Guess', role: 'Guess', image: 'assets/placeholder.avif', tag: 'Leadership Voice' },
-  { name: 'Guess', role: 'Guess', image: 'assets/placeholder.avif', tag: 'Guest Speaker' },
+  {
+    name: 'Rev. Sola Kolade',
+    role: 'Guest Minister',
+    image: 'assets/placeholder.avif',
+    tag: 'Minister & Coach',
+  },
+];
+
+export const BREAKOUT_SPEAKERS: Speaker[] = [
+  {
+    name: 'Pastor Kingsley Okonkwo',
+    role: "Lead Pastor · David's Christian Centre",
+    image: 'assets/pstkingsley.jpg',
+    tag: 'Relationship & Culture',
+  },
+  {
+    name: 'Rev. Sunday Ogwuche',
+    role: 'Apostolic Leader · Revival Missions',
+    image: 'assets/sunday-ogwuche.jpg',
+    tag: 'Missions & Prayer',
+  },
+  {
+    name: 'Dr. David Ogbueli',
+    role: 'Senior Pastor · Dominion City Worldwide',
+    image: 'assets/David Ogbueli.jpg',
+    tag: 'Kingdom Leadership',
+  },
+  {
+    name: 'Rev. Steve Mensah',
+    role: 'General Overseer · CEM Ghana',
+    image: 'assets/Rev. Steve Mensah.png',
+    tag: 'Evangelism & Missions',
+  },
+  {
+    name: 'Pastor Poju Oyemade',
+    role: 'Senior Pastor · The Covenant Nation',
+    image: 'assets/Pst. Poju Oyemade.png',
+    tag: 'Governance & Culture',
+  },
+  {
+    name: 'Rev. Sola Kolade',
+    role: 'Senior Minister · Kingdom Builders',
+    image: 'assets/placeholder.avif',
+    tag: 'Leadership Strategy',
+  },
 ];
 
 export interface WhyItem {
@@ -161,9 +206,72 @@ export const FAQS: FaqItem[] = [
 ];
 
 export const SAMSON_PROFILE = {
-  photo: 'assets/rev-samson-ajetomobi.png',
+  photo: 'assets/ReV. Samson Ajetomobi.jpeg',
   name: 'Rev. Samson Ajetomobi',
   title: 'President',
   org: 'Men of Issachar Vision Inc.',
   bio: 'Rev. Samson Ajetomobi is the President of Men of Issachar Vision Inc., the ministry behind the International Ministers/Leadership Conference. He and Rev. Mrs Stella Ajetomobi host this interdenominational gathering, bringing Christian leaders together for kingdom-minded leadership.',
 };
+
+export interface Testimonial {
+  id: string;
+  badge: string;
+  category: string;
+  quote: string;
+  body: string;
+  author: string;
+  role: string;
+  organization: string;
+  location: string;
+  experience: string;
+  image: string;
+  imageAlt: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'stella',
+    badge: '06.10.2025',
+    category: 'Spiritual Renewal & Leadership',
+    quote: 'Having known and been affiliated with this ministry for a couple of years now, our ministry has experienced significant positive changes. The annual International Ministers and Leadership Conference has tutored us overtime on the rudiments of mission and ministry. our practice of all that has been learnt has yielded great results including huge significant increase numerically. We eagerly look forward to the forthcoming conference.',
+    body: 'I have been in ministry for a couple of years now, our ministry has experienced significant positive changes. The annual International Ministers and Leadership Conference has tutored us overtime on the rudiments of mission and ministry. our practice of all that has been learnt has yielded great results including huge significant increase numerically. We eagerly look forward to the forthcoming conference.',
+    author: 'Bishop Dr Momo Francis',
+    role: 'Presiding Bishop',
+    organization: 'Great Commission Ministry of Christ International',
+    location: 'Liberia',
+    experience: 'Convener & Intercessor',
+    image: 'assets/momo.png',
+    imageAlt: 'Bishop Dr Momo Francis',
+  },
+  {
+    id: 'ogbueli',
+    badge: '14.08.2025',
+    category: 'Kingdom Governance & Strategy',
+    quote: 'International Ministers and Leadership Conference is one conference I always eagerly look forward to since 2010, as it has always been a time of hearing God clearly through teachings and personal encounters. An example out of many, was during the 2022 edition where I clearly heard the Lord say "start looking for an abandoned property. Prior to that time, we had prayed, searched and struggled to find a land for the church without any success. Today, we own a property in the heart of the community God sent us to and we are building a prestigious place of worship for Jesus. Amen.',
+    body: 'The depth of biblical scholarship and practical ministry strategy shared at IMLC is rare. It equips pastors not just to gather crowds, but to build lasting disciples who carry real-world influence.',
+    author: 'Pastor Paul Oni',
+    role: 'Lead Pastor',
+    organization: 'Christ Redemption Grace Ministry',
+    location: 'Nigeria',
+    experience: '12-Year Conference Partner',
+    image: 'assets/pauloni.png',
+    imageAlt: 'Pastor Paul Oni',
+  },
+
+  {
+    id: 'kingsley',
+    badge: '22.09.2025',
+    category: 'Next-Gen Ministry & Culture',
+    quote: 'The International Ministers and Leadership Conference has always been a home away from home in the midst of God\'s servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!',
+    body: 'The International Minister\'s and Leadership Conference has always been a home away from home in the midst of God\'s servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!',
+    author: 'Pastor Tony',
+    role: 'Pastor',
+    organization: 'Men of Issachar Vision Inc. EUROPE',
+    location: 'Germany',
+    experience: 'Conference Keynote & Mentor',
+    image: 'assets/tony.png',
+    imageAlt: 'Pastor Kingsley Okonkwo',
+  },
+
+];
+

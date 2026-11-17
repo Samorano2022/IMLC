@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, HostListener, inject } from '@angular/core';
-import { SPEAKERS } from './core/data';
+import { BREAKOUT_SPEAKERS, SPEAKERS } from './core/data';
 import { UiService } from './core/ui.service';
 import { Footer } from './layout/footer';
 import { Header } from './layout/header';
@@ -15,13 +15,14 @@ import { Moments } from './sections/moments';
 import { Purpose } from './sections/purpose';
 import { Shop } from './sections/shop';
 import { Speakers } from './sections/speakers';
+import { Testimonials } from './sections/testimonials';
 import { Video } from './sections/video';
 import { Why } from './sections/why';
 
 @Component({
   selector: 'app-root',
   imports: [
-    Header, Hero, About, Moments, Purpose, Speakers, Video, Why, Shop, Faq, Closing, Footer,
+    Header, Hero, About, Moments, Purpose, Speakers, Video, Testimonials, Why, Shop, Faq, Closing, Footer,
     RegisterModal, VideoModal, ProfileModal, Toast,
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -33,10 +34,11 @@ import { Why } from './sections/why';
       <app-moments />
       <app-purpose />
       <app-speakers sectionId="speakers" heading="Meet the Speakers" tone="sand" [speakers]="speakers" />
-      <app-speakers sectionId="breakout" heading="Breakout Session Speakers" tone="white" [speakers]="speakers" />
+      <!-- <app-speakers sectionId="breakout" heading="Breakout Session Speakers" tone="white" [speakers]="breakoutSpeakers" /> -->
       <app-video />
       <app-why />
       <app-shop />
+      <app-testimonials />
       <app-faq />
       <app-closing />
     </main>
@@ -51,6 +53,7 @@ import { Why } from './sections/why';
 export class App {
   private readonly ui = inject(UiService);
   protected readonly speakers = SPEAKERS;
+  protected readonly breakoutSpeakers = BREAKOUT_SPEAKERS;
 
   @HostListener('document:keydown.escape')
   onEscape(): void {

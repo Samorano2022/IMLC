@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RevealDirective } from '../core/reveal.directive';
+import { Scroll3dDirective } from '../core/scroll-3d.directive';
+import { Tilt3dDirective } from '../core/tilt-3d.directive';
 import { UiService } from '../core/ui.service';
 
 @Component({
   selector: 'app-video',
-  imports: [RevealDirective],
+  imports: [RevealDirective, Scroll3dDirective, Tilt3dDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <!-- <section class="video-section section-pad">
@@ -133,28 +135,38 @@ import { UiService } from '../core/ui.service';
       </div> -->
 
 
-<div class="video-grid">
+<div class="video-grid perspective-stage">
   <!-- Video 1 -->
-  <div class="video-card" appReveal [revealDelay]="100">
+  <div
+    class="video-card preserve-3d"
+    appReveal
+    [revealDelay]="100"
+    appScroll3d
+    [depth]="48"
+    [rotateX]="7"
+    [parallax]="0.06"
+    appTilt3d
+    [maxTilt]="8"
+  >
     <a
       href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
       target="_blank"
       rel="noopener noreferrer"
-      class="video-link"
+      class="video-link preserve-3d"
       aria-label="Watch Moments from the Gathering on YouTube"
     >
-      <div class="video-frame">
+      <div class="video-frame preserve-3d">
         <img
           src="https://img.youtube.com/vi/S4u9EgkEMOs/maxresdefault.jpg"
           alt="Moments from the Gathering video preview"
           loading="lazy"
         />
-        <span class="play-button">
+        <span class="play-button depth-z-30">
           <span class="play-icon">▶</span>
         </span>
       </div>
 
-      <div class="video-info">
+      <div class="video-info depth-z-20">
         <span class="video-category">CONFERENCE HIGHLIGHTS</span>
         <h3>Moments from the Gathering</h3>
         <span class="watch-video">Watch full video ↗</span>
@@ -163,26 +175,36 @@ import { UiService } from '../core/ui.service';
   </div>
 
   <!-- Video 2 -->
-  <div class="video-card" appReveal [revealDelay]="200">
+  <div
+    class="video-card preserve-3d"
+    appReveal
+    [revealDelay]="200"
+    appScroll3d
+    [depth]="48"
+    [rotateX]="7"
+    [parallax]="0.06"
+    appTilt3d
+    [maxTilt]="8"
+  >
     <a
       href="https://www.youtube.com/watch?v=OpKWOzz0Ekg"
       target="_blank"
       rel="noopener noreferrer"
-      class="video-link"
+      class="video-link preserve-3d"
       aria-label="Watch Messages That Transform on YouTube"
     >
-      <div class="video-frame">
+      <div class="video-frame preserve-3d">
         <img
           src="https://img.youtube.com/vi/OpKWOzz0Ekg/maxresdefault.jpg"
           alt="Messages That Transform video preview"
           loading="lazy"
         />
-        <span class="play-button">
+        <span class="play-button depth-z-30">
           <span class="play-icon">▶</span>
         </span>
       </div>
 
-      <div class="video-info">
+      <div class="video-info depth-z-20">
         <span class="video-category">TEACHINGS</span>
         <h3>Messages That Transform</h3>
         <span class="watch-video">Watch full video ↗</span>
@@ -191,26 +213,36 @@ import { UiService } from '../core/ui.service';
   </div>
 
   <!-- Video 3 -->
-  <div class="video-card" appReveal [revealDelay]="300">
+  <div
+    class="video-card preserve-3d"
+    appReveal
+    [revealDelay]="300"
+    appScroll3d
+    [depth]="48"
+    [rotateX]="7"
+    [parallax]="0.06"
+    appTilt3d
+    [maxTilt]="8"
+  >
     <a
       href="https://www.youtube.com/watch?v=5LzTK3p1SHE"
       target="_blank"
       rel="noopener noreferrer"
-      class="video-link"
+      class="video-link preserve-3d"
       aria-label="Watch Moments of Worship on YouTube"
     >
-      <div class="video-frame">
+      <div class="video-frame preserve-3d">
         <img
           src="https://img.youtube.com/vi/5LzTK3p1SHE/maxresdefault.jpg"
           alt="Moments of Worship video preview"
           loading="lazy"
         />
-        <span class="play-button">
+        <span class="play-button depth-z-30">
           <span class="play-icon">▶</span>
         </span>
       </div>
 
-      <div class="video-info">
+      <div class="video-info depth-z-20">
         <span class="video-category">WORSHIP & FELLOWSHIP</span>
         <h3>Moments of Worship</h3>
         <span class="watch-video">Watch full video ↗</span>

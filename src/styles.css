@@ -92,7 +92,7 @@ button {
 .button {
   border: 0;
   border-radius: 30px;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: 14px;
   font-weight: 600;
 }
@@ -121,7 +121,7 @@ button {
 .hero {
   min-height: 100vh;
   background:
-    linear-gradient(90deg, rgba(9, 9, 14, 0.85), rgba(11, 9, 17, 0.25)),
+    linear-gradient(120deg, rgba(9, 9, 14, 0.45), rgba(11, 9, 17, 0.15)),
     url('/assets/hero_bg.png') center/cover;
   position: relative;
   color: white;
@@ -295,18 +295,22 @@ h3 {
   gap: 7%;
   align-items: center;
 }
+
 .intro {
-  background: #000;
+  background: #0e100f;
 }
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
   align-items: center;
 }
+
 .about-content h3 {
-  color: snow;
+  color: #fffff8;
 }
+
 .intro-image {
   width: 100%;
   height: 530px;
@@ -314,25 +318,31 @@ h3 {
   border-radius: 48px;
   box-shadow: 0 25px 65px #07079480;
 }
+
 .intro-imaged {
   width: 100%;
   height: 530px;
   object-fit: cover;
   border-radius: 48px;
 }
+
 .tone-white {
-  color: #9f9e9e;
+  color: #fffff8;
 }
+
 .eyes-brow {
-  color: #9f9e9e;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 0.18em;
+  color: #aaa99c;
+  font-size: 54px;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
+
 .highlight {
-  color: #d6d3de;
+  color: #fffff8;
   font-weight: 800;
 }
+
 .intro-content {
   max-width: 520px;
 }
@@ -531,6 +541,7 @@ h3 {
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
+
 .shop-card h3 {
   font-family: 'DM Sans', sans-serif;
   font-size: 20px;
@@ -540,6 +551,7 @@ h3 {
   line-height: 1.25;
   letter-spacing: -0.01em;
 }
+
 .shop-card p {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
@@ -547,6 +559,7 @@ h3 {
   margin: 4px 0 0;
   line-height: 1.25;
 }
+
 .speaker-role {
   font-size: 12.5px;
   line-height: 1.4;
@@ -575,7 +588,7 @@ h3 {
 }
 
 .muted-light {
-  font-size: 16px;
+  font-size: 22px;
   color: #c7b8b5;
 }
 
@@ -970,8 +983,8 @@ h3 {
 }
 
 .faq > div:first-child p:not(.eyebrow) {
-  color: #827b78;
-  font-size: 12px;
+  color: #080612;
+  font-size: 17px;
 }
 
 .faq-list details {
@@ -1495,9 +1508,11 @@ h3 {
   .intro-image {
     height: 230px;
   }
+
   .intro-imaged {
     height: 380px;
   }
+
   .intro-content {
     max-width: none;
   }
@@ -2019,6 +2034,156 @@ section[id] {
   background: rgba(9, 1, 13, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+}
+
+/* ==========================================================================
+   Modern 3D Spatial Scroll & Depth Engine
+   ========================================================================== */
+
+.perspective-stage {
+  perspective: 1200px;
+  perspective-origin: 50% 40%;
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Multi-plane depth layers for 3D parallax inside cards */
+.depth-z-10 {
+  transform: translateZ(12px);
+}
+
+.depth-z-20 {
+  transform: translateZ(24px);
+}
+
+.depth-z-30 {
+  transform: translateZ(36px);
+}
+
+.depth-z-40 {
+  transform: translateZ(48px);
+}
+
+/* 3D Interactive Tilt Targets */
+.tilt-3d-target {
+  transform-style: preserve-3d;
+  transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.tilt-3d-target:hover {
+  box-shadow:
+    0 24px 48px -12px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(240, 75, 33, 0.12);
+}
+
+/* Ambient 3D Rotating Rings in Hero */
+.hero-3d-ambient {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  perspective: 1200px;
+}
+
+.hero-3d-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(229, 182, 79, 0.22);
+  box-shadow:
+    inset 0 0 35px rgba(240, 75, 33, 0.08),
+    0 0 25px rgba(77, 58, 169, 0.15);
+  transform-style: preserve-3d;
+  will-change: transform;
+  animation: rotate3dRing 28s linear infinite;
+  /* background: #604a9c; */
+}
+
+.hero-3d-ring-1 {
+  width: 540px;
+  height: 540px;
+  top: -12%;
+  right: 2%;
+  border-color: rgba(240, 140, 33, 0.58);
+  animation-duration: 34s;
+  background: #604a9c;
+}
+
+.hero-3d-ring-2 {
+  width: 360px;
+  height: 360px;
+  bottom: 8%;
+  left: 5%;
+  border-color: rgba(229, 182, 79, 0.22);
+  animation-duration: 26s;
+  animation-direction: reverse;
+  /* background: #604a9c; */
+}
+
+@keyframes rotate3dRing {
+  0% {
+    transform: rotateX(65deg) rotateY(18deg) rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateX(50deg) rotateY(-22deg) rotateZ(180deg);
+  }
+
+  100% {
+    transform: rotateX(65deg) rotateY(18deg) rotateZ(360deg);
+  }
+}
+
+/* 3D Runway Elevation for Cards */
+.speaker-card,
+.video-card,
+.shop-card,
+.intro-image,
+.hero-portrait {
+  transform-style: preserve-3d;
+}
+
+.speaker-card .speaker-photo,
+.video-card .video-frame,
+.shop-card .speaker-photo {
+  transform: translateZ(14px);
+  transform-style: preserve-3d;
+}
+
+.speaker-card .speaker-info,
+.video-card .video-info {
+  transform: translateZ(24px);
+}
+
+.speaker-card .speaker-btn,
+.video-card .play-button {
+  transform: translateZ(36px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-3d-ring {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .preserve-3d,
+  .tilt-3d-target,
+  .depth-z-10,
+  .depth-z-20,
+  .depth-z-30,
+  .depth-z-40,
+  .speaker-card,
+  .video-card,
+  .shop-card,
+  .intro-image,
+  .hero-portrait {
+    transform: none !important;
+    transform-style: flat !important;
+  }
 }
 
 /* ---- Hero stat strip (Biograph-style proof points) --------------------- */
@@ -2602,6 +2767,8 @@ section[id] {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .visual-aura {
@@ -2634,6 +2801,7 @@ section[id] {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   z-index: 1;
+  transform: rotate(-38deg) translateZ(-20px);
 }
 
 /* Back Layer 2: Delicate wireframe outline (top left) */
@@ -2645,6 +2813,7 @@ section[id] {
   border: 1.5px solid rgba(255, 255, 255, 0.45);
   background: transparent;
   z-index: 1;
+  transform: rotate(-38deg) translateZ(-12px);
 }
 
 /* Back Layer 3: Delicate wireframe outline (top right) */
@@ -2656,6 +2825,7 @@ section[id] {
   border: 1.5px solid #fc7803;
   background: transparent;
   z-index: 1;
+  transform: rotate(-38deg) translateZ(-8px);
 }
 
 /* Center Portrait Stage */
@@ -2669,6 +2839,8 @@ section[id] {
   justify-content: center;
   overflow: hidden;
   border-radius: 1000px;
+  transform: translateZ(15px);
+  transform-style: preserve-3d;
 }
 
 .portrait-photo {

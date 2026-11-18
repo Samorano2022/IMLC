@@ -7,13 +7,15 @@ import {
 } from '@angular/core';
 import { GALLERY_ROWS } from '../core/data';
 import { RevealDirective } from '../core/reveal.directive';
+import { Scroll3dDirective } from '../core/scroll-3d.directive';
+import { Tilt3dDirective } from '../core/tilt-3d.directive';
 
 @Component({
   selector: 'app-moments',
-  imports: [RevealDirective],
+  imports: [RevealDirective, Scroll3dDirective, Tilt3dDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section class="moments section-pad" id="moments">
+    <section class="moments section-pad perspective-stage" id="moments">
       <div class="section-heading" appReveal>
         <div>
           <h2>
@@ -41,13 +43,17 @@ import { RevealDirective } from '../core/reveal.directive';
       @for (row of rows; track $index) {
         <div
           #galleryRow
-          class="gallery-track"
+          class="gallery-track preserve-3d"
           appReveal
           [revealDelay]="$index * 120"
+          appScroll3d
+          [depth]="45"
+          [rotateX]="6"
+          [parallax]="0.06"
           (scroll)="$index === 0 && onScroll(galleryRow)"
         >
           @for (img of row; track $index) {
-            <img [src]="img.src" [alt]="img.alt" loading="lazy" />
+            <img [src]="img.src" [alt]="img.alt" loading="lazy" appTilt3d [maxTilt]="8" [scale]="1.04" />
           }
         </div>
       }

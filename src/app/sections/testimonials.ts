@@ -12,15 +12,17 @@ import {
 } from '@angular/core';
 import { TESTIMONIALS, Testimonial } from '../core/data';
 import { RevealDirective } from '../core/reveal.directive';
+import { Scroll3dDirective } from '../core/scroll-3d.directive';
+import { Tilt3dDirective } from '../core/tilt-3d.directive';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [RevealDirective],
+  imports: [RevealDirective, Scroll3dDirective, Tilt3dDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section
       #sectionRef
-      class="testimonials-section"
+      class="testimonials-section perspective-stage"
       id="testimonials"
       tabindex="0"
       role="region"
@@ -41,7 +43,13 @@ import { RevealDirective } from '../core/reveal.directive';
         <div class="bg-diagonal-grid"></div>
       </div>
 
-      <div class="testimonials-container">
+      <div
+        class="testimonials-container preserve-3d"
+        appScroll3d
+        [depth]="42"
+        [rotateX]="5"
+        [parallax]="0.04"
+      >
         <!-- Top Bar: Brand & Live Indicator -->
         <header class="testimonials-top-bar" appReveal>
           <div class="testimonials-brand">
@@ -234,7 +242,7 @@ import { RevealDirective } from '../core/reveal.directive';
 
           <!-- Right Column: Visual Centerpiece (Signature Diagonal Capsules & Portrait) -->
           <div class="testimonials-visual" appReveal [revealDelay]="120">
-            <div class="visual-canvas">
+            <div class="visual-canvas preserve-3d" appTilt3d [maxTilt]="9">
               <!-- Backdrop Aura -->
               <div class="visual-aura" aria-hidden="true"></div>
 

@@ -20,16 +20,17 @@ import { UiService } from '../core/ui.service';
       </div>
       <div class="shop-grid">
         @for (item of items; track $index) {
-          <article class="speaker-card" appReveal [revealDelay]="($index % 3) * 90">
+          <article class="shop-card" appReveal [revealDelay]="($index % 3) * 90">
             <div class="speaker-photo"><img [src]="item.image" [alt]="item.name" /></div>
             <h3>{{ item.name }}</h3>
             <p>{{ item.price }}</p>
           </article>
         }
       </div>
-      <button class="button button-orange" type="button">
-        Shop now
-      </button>
+      <div>
+        <br />
+        <button class="button button-orange" type="button">Shop now</button>
+      </div>
     </section>
   `,
 })

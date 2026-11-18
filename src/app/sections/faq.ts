@@ -9,7 +9,7 @@ import { RevealDirective } from '../core/reveal.directive';
   template: `
     <section class="faq section-pad" id="faq">
       <div appReveal>
-        <p class="eyebrow">Before you join us.</p>
+        <!-- <p class="eyebrow">Before you join us.</p> -->
         <h2>FREQUENTLY ASKED QUESTIONS</h2>
         <p>Everything you need to prepare for the gathering.</p>
       </div>

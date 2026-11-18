@@ -42,9 +42,9 @@ import { UiService } from '../core/ui.service';
           Let the message move you again.
         </p>
       </div>
-      
+<!--       
       <div class="video-grid">
-        <!-- Video 1 -->
+  
         <div class="video-card" appReveal [revealDelay]="100">
           <a
             href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
@@ -77,7 +77,7 @@ import { UiService } from '../core/ui.service';
           </a>
         </div>
 
-        <!-- Video 2 -->
+      
         <div class="video-card" appReveal [revealDelay]="200">
           <a
             href="https://www.youtube.com/watch?v=OpKWOzz0Ekg"
@@ -104,7 +104,7 @@ import { UiService } from '../core/ui.service';
           </a>
         </div>
 
-        <!-- Video 3 -->
+
         <div class="video-card" appReveal [revealDelay]="300">
           <a
             href="https://www.youtube.com/watch?v=5LzTK3p1SHE"
@@ -130,7 +130,95 @@ import { UiService } from '../core/ui.service';
             </div>
           </a>
         </div>
+      </div> -->
+
+
+<div class="video-grid">
+  <!-- Video 1 -->
+  <div class="video-card" appReveal [revealDelay]="100">
+    <a
+      href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="video-link"
+      aria-label="Watch Moments from the Gathering on YouTube"
+    >
+      <div class="video-frame">
+        <img
+          src="https://img.youtube.com/vi/S4u9EgkEMOs/maxresdefault.jpg"
+          alt="Moments from the Gathering video preview"
+          loading="lazy"
+        />
+        <span class="play-button">
+          <span class="play-icon">▶</span>
+        </span>
       </div>
+
+      <div class="video-info">
+        <span class="video-category">CONFERENCE HIGHLIGHTS</span>
+        <h3>Moments from the Gathering</h3>
+        <span class="watch-video">Watch full video ↗</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="video-card" appReveal [revealDelay]="200">
+    <a
+      href="https://www.youtube.com/watch?v=OpKWOzz0Ekg"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="video-link"
+      aria-label="Watch Messages That Transform on YouTube"
+    >
+      <div class="video-frame">
+        <img
+          src="https://img.youtube.com/vi/OpKWOzz0Ekg/maxresdefault.jpg"
+          alt="Messages That Transform video preview"
+          loading="lazy"
+        />
+        <span class="play-button">
+          <span class="play-icon">▶</span>
+        </span>
+      </div>
+
+      <div class="video-info">
+        <span class="video-category">TEACHINGS</span>
+        <h3>Messages That Transform</h3>
+        <span class="watch-video">Watch full video ↗</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- Video 3 -->
+  <div class="video-card" appReveal [revealDelay]="300">
+    <a
+      href="https://www.youtube.com/watch?v=5LzTK3p1SHE"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="video-link"
+      aria-label="Watch Moments of Worship on YouTube"
+    >
+      <div class="video-frame">
+        <img
+          src="https://img.youtube.com/vi/5LzTK3p1SHE/maxresdefault.jpg"
+          alt="Moments of Worship video preview"
+          loading="lazy"
+        />
+        <span class="play-button">
+          <span class="play-icon">▶</span>
+        </span>
+      </div>
+
+      <div class="video-info">
+        <span class="video-category">WORSHIP & FELLOWSHIP</span>
+        <h3>Moments of Worship</h3>
+        <span class="watch-video">Watch full video ↗</span>
+      </div>
+    </a>
+  </div>
+</div>
+
     </section>
   `,
 })

@@ -20,13 +20,19 @@ import { CONTACT_EMAIL } from '../core/data';
         <a href="#about">About</a>
         <a href="#speakers">Speakers</a>
         <a href="#programme">Programme</a>
+        <a href="#resources">Shop</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#faq">FAQs</a>
       </div>
       <div>
-        <p class="eyebrow light">GET IN TOUCH</p>
-        <a href="#footer">Instagram </a>
-        <a href="#footer">Facebook</a>
-        <a href="#footer">Youtube</a>
+        <p class="eyebrow light">OUR SOCIALS</p>
+        <a target="_blank" href="https://www.instagram.com/themivglobal/">Instagram </a>
+        <a target="_blank" href="https://www.facebook.com/themivglobal">Facebook</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@MIVIbadan"
+          >Youtube</a
+        >
+        <a target="_blank" href="https://x.com/themivglobal">X.com</a>
+        <a target="_blank" href="https://www.tiktok.com/@miv_update">Tik Tok</a>
       </div>
       <div>
         <p class="eyebrow light">CONTACT</p>

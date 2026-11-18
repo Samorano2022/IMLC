@@ -6,10 +6,10 @@ import { RevealDirective } from '../core/reveal.directive';
   imports: [RevealDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section class="intro section-pad" id="purpose">
+    <section class="intr section-pad" id="purpose">
       <div class="intro-grid">
         <img
-          class="intro-image"
+          class="intro-imaged"
           appReveal
           src="assets/auditorium-backview.jpg"
           alt="A large gathering at a conference"

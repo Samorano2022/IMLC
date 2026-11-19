@@ -15,8 +15,8 @@ import { UiService } from '../core/ui.service';
         <div>
           <h2>Explore the Conference Collection</h2>
           <p>
-            Discover a curated collection of conference materials, branded merchandise, and
-            <br />exclusive resources available for purchase.
+            Pick your colour and size, pay securely online, and collect <br />
+            your order at the conference store. You only sign in at checkout.
           </p>
         </div>
       </div>
@@ -33,7 +33,9 @@ import { UiService } from '../core/ui.service';
             appTilt3d
             [maxTilt]="8"
           >
-            <div class="speaker-photo preserve-3d depth-z-10"><img [src]="item.image" [alt]="item.name" /></div>
+            <div class="speaker-photo preserve-3d depth-z-10">
+              <img [src]="item.image" [alt]="item.name" />
+            </div>
             <h3 class="depth-z-20">{{ item.name }}</h3>
             <p class="depth-z-10">{{ item.price }}</p>
           </article>
@@ -41,7 +43,12 @@ import { UiService } from '../core/ui.service';
       </div>
       <div>
         <br />
-        <button class="button button-orange" type="button">Shop now</button>
+        <a
+          target="_blank"
+          href="https://conference.menofissacharvision.com/shop"
+          class="button button-orange"
+          >Shop now</a
+        >
       </div>
     </section>
   `,

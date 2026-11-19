@@ -12,7 +12,6 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Programme', href: '#programme' },
   { label: 'Shop', href: '#resources' },
   { label: 'Testimonials', href: '#testimonials' },
-
 ];
 
 export interface GalleryImage {
@@ -62,20 +61,20 @@ export const SPEAKERS: Speaker[] = [
     name: 'Rev. Samson Ajetomobi',
     role: 'President · Men of Issachar Vision Inc.',
     image: 'assets/ReV. Samson Ajetomobi.jpeg',
-    tag: 'Minister & Teacher',
+    tag: 'HOST',
     profile: 'samson',
   },
   {
     name: 'Rev. Mrs. Stella Ajetomobi',
     role: 'Vice President, Men of Issachar Vision Inc.',
     image: 'assets/ReV. Stella Ajetomobi.jpg',
-    tag: 'Minister & Teacher',
+    tag: 'CO-HOST',
   },
   {
     name: 'Rev. Steve Mensah',
     role: 'General Overseer, Charismatic Evangelistic Ministry (CEM)',
     image: 'assets/Rev. Steve Mensah.png',
-    tag: 'Pastor & Author',
+    tag: 'Guest Minister',
   },
   {
     name: 'Dr. David Ogbueli',
@@ -87,13 +86,13 @@ export const SPEAKERS: Speaker[] = [
     name: 'Pastor Poju Oyemade',
     role: 'Founder and Senior Pastor, The Covenant Nation',
     image: 'assets/Pst. Poju Oyemade.png',
-    tag: 'Pastor & Mentor',
+    tag: 'Guest Minister',
   },
   {
     name: 'Rev. Sola Kolade',
-    role: 'Guest Minister',
-    image: 'assets/placeholder.avif',
-    tag: 'Minister & Coach',
+    role: 'Founder and Senior Pastor of Vine Branch Ministries',
+    image: 'assets/kolade.png',
+    tag: 'Guest Minister',
   },
 ];
 
@@ -131,7 +130,7 @@ export const BREAKOUT_SPEAKERS: Speaker[] = [
   {
     name: 'Rev. Sola Kolade',
     role: 'Senior Minister · Kingdom Builders',
-    image: 'assets/placeholder.avif',
+    image: 'assets/kolade.png',
     tag: 'Leadership Strategy',
   },
 ];
@@ -167,13 +166,14 @@ export interface ShopItem {
 }
 
 export const SHOP_ITEMS: ShopItem[] = [
-  { name: 'Revival Polo', price: 'NGN 13,000.00', image: 'assets/Product mockup.png' },
-  { name: 'Revival baseball shirt', price: 'NGN 16,000.00', image: 'assets/Product mockupII.png' },
-  { name: 'Revival T-shirt', price: 'NGN 13,000.00', image: 'assets/ItemOne.png' },
+  { name: 'Revivals Polo T-Shirts', price: 'NGN 9,990.00', image: 'assets/Product mockup.png' },
+  { name: 'Revivals Baseball Shirt', price: 'NGN 13,500.00', image: 'assets/Product mockupII.png' },
+  { name: 'Revivals Washed/Acidic T-shirts', price: 'NGN 9,990.00', image: 'assets/ItemOne.png' },
   // NOTE: the original markup showed "President · Men of Issachar Vision Inc." here
   // (a copy-paste leftover). Replace with the real price.
-  { name: 'Revival hoodie', price: 'Price to be announced', image: 'assets/itemTwo.jpeg' },
-  { name: 'Revival hoodie', price: 'NGN 20,000.00', image: 'assets/itemThree.jpeg' },
+  { name: 'Revivals Roundneck T-shirts', price: 'NGN 6,500.00', image: 'assets/itemTwo.jpeg' },
+  { name: 'Revivals Hoodie', price: 'NGN 14,990.00', image: 'assets/itemThree.jpeg' },
+  { name: 'Revivals Face Cap', price: 'NGN 3,500.00', image: 'assets/revivalcap.jpg' },
 ];
 
 export interface FaqItem {
@@ -233,7 +233,8 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'stella',
     badge: '06.10.2025',
     category: 'Spiritual Renewal & Leadership',
-    quote: 'Having known and been affiliated with this ministry for a couple of years now, our ministry has experienced significant positive changes. The annual International Ministers and Leadership Conference has tutored us overtime on the rudiments of mission and ministry. our practice of all that has been learnt has yielded great results including huge significant increase numerically. We eagerly look forward to the forthcoming conference.',
+    quote:
+      'Having known and been affiliated with this ministry for a couple of years now, our ministry has experienced significant positive changes. The annual International Ministers and Leadership Conference has tutored us overtime on the rudiments of mission and ministry. our practice of all that has been learnt has yielded great results including huge significant increase numerically. We eagerly look forward to the forthcoming conference.',
     body: 'I have been in ministry for a couple of years now, our ministry has experienced significant positive changes. The annual International Ministers and Leadership Conference has tutored us overtime on the rudiments of mission and ministry. our practice of all that has been learnt has yielded great results including huge significant increase numerically. We eagerly look forward to the forthcoming conference.',
     author: 'Bishop Dr Momo Francis',
     role: 'Presiding Bishop',
@@ -247,7 +248,8 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'ogbueli',
     badge: '14.08.2025',
     category: 'Kingdom Governance & Strategy',
-    quote: 'International Ministers and Leadership Conference is one conference I always eagerly look forward to since 2010, as it has always been a time of hearing God clearly through teachings and personal encounters. An example out of many, was during the 2022 edition where I clearly heard the Lord say "start looking for an abandoned property. Prior to that time, we had prayed, searched and struggled to find a land for the church without any success. Today, we own a property in the heart of the community God sent us to and we are building a prestigious place of worship for Jesus. Amen.',
+    quote:
+      'International Ministers and Leadership Conference is one conference I always eagerly look forward to since 2010, as it has always been a time of hearing God clearly through teachings and personal encounters. An example out of many, was during the 2022 edition where I clearly heard the Lord say "start looking for an abandoned property. Prior to that time, we had prayed, searched and struggled to find a land for the church without any success. Today, we own a property in the heart of the community God sent us to and we are building a prestigious place of worship for Jesus. Amen.',
     body: 'The depth of biblical scholarship and practical ministry strategy shared at IMLC is rare. It equips pastors not just to gather crowds, but to build lasting disciples who carry real-world influence.',
     author: 'Pastor Paul Oni',
     role: 'Lead Pastor',
@@ -262,8 +264,9 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 'kingsley',
     badge: '22.09.2025',
     category: 'Next-Gen Ministry & Culture',
-    quote: 'The International Ministers and Leadership Conference has always been a home away from home in the midst of God\'s servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!',
-    body: 'The International Minister\'s and Leadership Conference has always been a home away from home in the midst of God\'s servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!',
+    quote:
+      "The International Ministers and Leadership Conference has always been a home away from home in the midst of God's servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!",
+    body: "The International Minister's and Leadership Conference has always been a home away from home in the midst of God's servants across the globe, It has broadened my calling at a global scale and taught me to run the race with focus, determination and passion. The previous edition was an eye-opener to desire more of God, walk with Him and take more nations in Europe with the gospel of Christ. We look forward to another facet of impartation!",
     author: 'Pastor Tony',
     role: 'Pastor',
     organization: 'Men of Issachar Vision Inc. EUROPE',
@@ -272,6 +275,4 @@ export const TESTIMONIALS: Testimonial[] = [
     image: 'assets/tony.png',
     imageAlt: 'Pastor Kingsley Okonkwo',
   },
-
 ];
-

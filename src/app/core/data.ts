@@ -60,7 +60,7 @@ export const SPEAKERS: Speaker[] = [
   {
     name: 'Rev. Samson Ajetomobi',
     role: 'President · Men of Issachar Vision Inc.',
-    image: 'assets/ReV. Samson Ajetomobi.jpeg',
+    image: 'assets/samson.jpeg',
     tag: 'HOST',
     profile: 'samson',
   },

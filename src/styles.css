@@ -421,7 +421,7 @@ h3 {
 
 .speaker-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(16px, 2vw, 24px);
 }
 
@@ -748,6 +748,9 @@ h3 {
   color: #ffffff;
   margin: 20px 0 24px;
   font-size: 16px;
+}
+.programme-copy {
+  position: sticky;
 }
 
 .button-dark {

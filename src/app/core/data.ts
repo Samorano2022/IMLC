@@ -94,6 +94,18 @@ export const SPEAKERS: Speaker[] = [
     image: 'assets/kolade.png',
     tag: 'Guest Minister',
   },
+  {
+    name: 'Apostle Michael Orokpo',
+    role: 'Founder and president of Encounter Jesus Ministries International (EJMI)',
+    image: 'assets/orokpro.jpg',
+    tag: 'Guest Minister',
+  },
+  {
+    name: 'Evang. Mike Bamiloye',
+    role: 'Evangelist, founder and president of the film production company Mount Zion Faith Ministries',
+    image: 'assets/mike.jpg',
+    tag: 'Guest Minister',
+  },
 ];
 
 export const BREAKOUT_SPEAKERS: Speaker[] = [

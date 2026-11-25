@@ -44,7 +44,7 @@ import { UiService } from '../core/ui.service';
           Let the message move you again.
         </p>
       </div>
-<!--       
+      <!--       
       <div class="video-grid">
   
         <div class="video-card" appReveal [revealDelay]="100">
@@ -134,9 +134,8 @@ import { UiService } from '../core/ui.service';
         </div>
       </div> -->
 
-
-<div class="video-grid perspective-stage">
-  <!-- Video 1 -->
+      <!-- <div class="video-grid perspective-stage">
+  
   <div
     class="video-card preserve-3d"
     appReveal
@@ -174,7 +173,7 @@ import { UiService } from '../core/ui.service';
     </a>
   </div>
 
-  <!-- Video 2 -->
+ 
   <div
     class="video-card preserve-3d"
     appReveal
@@ -212,7 +211,7 @@ import { UiService } from '../core/ui.service';
     </a>
   </div>
 
-  <!-- Video 3 -->
+  
   <div
     class="video-card preserve-3d"
     appReveal
@@ -249,8 +248,232 @@ import { UiService } from '../core/ui.service';
       </div>
     </a>
   </div>
-</div>
+</div> -->
 
+      <div class="video-grid perspective-stage">
+        <!-- Video 1 -->
+        <!-- <div
+          class="video-card preserve-3d"
+          appReveal
+          [revealDelay]="100"
+          appScroll3d
+          [depth]="48"
+          [rotateX]="7"
+          [parallax]="0.06"
+          appTilt3d
+          [maxTilt]="8"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card-link"
+            aria-label="Watch Moments from the Gathering on YouTube"
+          ></a>
+
+          <div class="video-frame preserve-3d">
+            <img
+              src="https://img.youtube.com/vi/S4u9EgkEMOs/maxresdefault.jpg"
+              alt="Moments from the Gathering video preview"
+              loading="lazy"
+            />
+            <span class="play-button depth-z-30">
+              <span class="play-icon">▶</span>
+            </span>
+          </div>
+
+          <div class="video-info depth-z-20">
+            <span class="video-category">CONFERENCE HIGHLIGHTS</span>
+            <h3>Moments from the Gathering</h3>
+            <span class="watch-video">Watch full video ↗</span>
+          </div>
+        </div> -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/S4u9EgkEMOs"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/2KQ26PTRyro"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/QuVZNRIk0pE"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <!-- <div
+          class="video-card preserve-3d"
+          appReveal
+          [revealDelay]="300"
+          appScroll3d
+          [depth]="48"
+          [rotateX]="7"
+          [parallax]="0.06"
+          appTilt3d
+          [maxTilt]="8"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=5LzTK3p1SHE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card-link"
+            aria-label="Watch Moments of Worship on YouTube"
+          ></a>
+
+          <div class="video-frame preserve-3d">
+            <img
+              src="https://img.youtube.com/vi/5LzTK3p1SHE/maxresdefault.jpg"
+              alt="Moments of Worship video preview"
+              loading="lazy"
+            />
+            <span class="play-button depth-z-30">
+              <span class="play-icon">▶</span>
+            </span>
+          </div>
+
+          <div class="video-info depth-z-20">
+            <span class="video-category">WORSHIP & FELLOWSHIP</span>
+            <h3>Moments of Worship</h3>
+            <span class="watch-video">Watch full video ↗</span>
+          </div>
+        </div> -->
+      </div>
+      <div class="video-grid perspective-stage">
+        <!-- Video 1 -->
+        <!-- <div
+          class="video-card preserve-3d"
+          appReveal
+          [revealDelay]="100"
+          appScroll3d
+          [depth]="48"
+          [rotateX]="7"
+          [parallax]="0.06"
+          appTilt3d
+          [maxTilt]="8"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=S4u9EgkEMOs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card-link"
+            aria-label="Watch Moments from the Gathering on YouTube"
+          ></a>
+
+          <div class="video-frame preserve-3d">
+            <img
+              src="https://img.youtube.com/vi/S4u9EgkEMOs/maxresdefault.jpg"
+              alt="Moments from the Gathering video preview"
+              loading="lazy"
+            />
+            <span class="play-button depth-z-30">
+              <span class="play-icon">▶</span>
+            </span>
+          </div>
+
+          <div class="video-info depth-z-20">
+            <span class="video-category">CONFERENCE HIGHLIGHTS</span>
+            <h3>Moments from the Gathering</h3>
+            <span class="watch-video">Watch full video ↗</span>
+          </div>
+        </div> -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/cuKcB7iWn7M"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/5bnR-ksYDBE"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-preview">
+          <iframe
+            src="https://www.youtube.com/embed/WGHUZD3jDlw"
+            title="Moments from the Gathering"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+        <!-- <div
+          class="video-card preserve-3d"
+          appReveal
+          [revealDelay]="300"
+          appScroll3d
+          [depth]="48"
+          [rotateX]="7"
+          [parallax]="0.06"
+          appTilt3d
+          [maxTilt]="8"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=5LzTK3p1SHE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="video-card-link"
+            aria-label="Watch Moments of Worship on YouTube"
+          ></a>
+
+          <div class="video-frame preserve-3d">
+            <img
+              src="https://img.youtube.com/vi/5LzTK3p1SHE/maxresdefault.jpg"
+              alt="Moments of Worship video preview"
+              loading="lazy"
+            />
+            <span class="play-button depth-z-30">
+              <span class="play-icon">▶</span>
+            </span>
+          </div>
+
+          <div class="video-info depth-z-20">
+            <span class="video-category">WORSHIP & FELLOWSHIP</span>
+            <h3>Moments of Worship</h3>
+            <span class="watch-video">Watch full video ↗</span>
+          </div>
+        </div> -->
+      </div>
     </section>
   `,
 })

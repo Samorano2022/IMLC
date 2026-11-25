@@ -327,7 +327,7 @@ h3 {
 }
 
 .tone-white {
-  color: #fffff8;
+  color: #fffff8 !important;
 }
 
 .eyes-brow {
@@ -653,6 +653,7 @@ h3 {
 .video-section {
   padding-top: 90px;
   padding-bottom: 100px;
+  background: #080a0b;
 }
 
 .side-note {
@@ -1041,7 +1042,7 @@ h3 {
 .footer {
   background: #100716;
   color: #fff;
-  padding: 70px clamp(24px, 9vw, 140px) 25px;
+  padding: 10px clamp(24px, 9vw, 42px) 25px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 45px;

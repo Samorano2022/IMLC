@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RevealDirective } from '../core/reveal.directive';
-import { Scroll3dDirective } from '../core/scroll-3d.directive';
-import { Tilt3dDirective } from '../core/tilt-3d.directive';
+// import { Scroll3dDirective } from '../core/scroll-3d.directive';
+// import { Tilt3dDirective } from '../core/tilt-3d.directive';
 import { UiService } from '../core/ui.service';
 
 @Component({
   selector: 'app-video',
-  imports: [RevealDirective, Scroll3dDirective, Tilt3dDirective],
+  imports: [RevealDirective],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <!-- <section class="video-section section-pad">
@@ -35,11 +35,11 @@ import { UiService } from '../core/ui.service';
     <section class="video-section section-pad">
       <div class="section-heading" appReveal>
         <div>
-          <p class="eyebrow">LAST YEAR EXPERIENCE</p>
-          <h2>REVISIT THE EXPERIENCE</h2>
+          <p class="eyebrow tone-white">LAST YEAR EXPERIENCE</p>
+          <h2 class="tone-white">REVISIT THE EXPERIENCE</h2>
         </div>
 
-        <p class="side-note">
+        <p class="side-note tone-white">
           A moment from the gathering.<br />
           Let the message move you again.
         </p>
